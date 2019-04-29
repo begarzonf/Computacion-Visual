@@ -35,7 +35,7 @@ Se realizaron en total 4 actividades:
 * Mascaras de convolución en imagen.
 * Segmentación de una imagen segun el histograma.
 
-Los procedimientos que seguimos fueron bastante simples pero efectivos para el estudio de los efectos de filtro y mascaras de concolución. Se hace una conversion pixel a pixel realizando calculos basicos, y se encuentra que los filtros pueden servir para resaltar ciertas partes de la imagen, cuentan una historia.
+Los procedimientos que seguimos fueron bastante simples pero efectivos para el estudio de los efectos de filtro y mascaras de convolución. Se hace una conversion pixel a pixel realizando calculos basicos, y se encuentra que los filtros pueden servir para resaltar ciertas partes de la imagen, cuentan una historia.
 
 ## Entrega
 
