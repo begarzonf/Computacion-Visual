@@ -51,7 +51,7 @@ void movieEvent(Movie m) {
     //myMovie2.pixels[loc] = ((brightness(myMovie.pixels[loc])>123)?color(0):color(255));
     
     //Método 3 (funcion)
-    myMovie2.pixels[loc] = color(0.299*r + 0.587*g+0.114*b);
+    myMovie2.pixels[loc] = color(0.2627*r + 0.6780*g+0.0593*b);
   }  
   }
 }
