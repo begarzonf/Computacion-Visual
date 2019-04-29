@@ -1,4 +1,4 @@
-# Taller de análisis de imágenes por software
+﻿# Taller de análisis de imágenes por software
 
 ## Propósito
 
@@ -28,7 +28,6 @@ Complete la tabla:
 
 ## Discusión
 
-(describa brevemente las actividades realizadas y los resultados obtenidos)
 Se realizaron en total 4 actividades:
 
 * Filtro blanco y negro en imagen.
