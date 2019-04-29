@@ -33,10 +33,21 @@ void draw() {
   }  
   
 
-  myMovie2.updatePixels();  
+  myMovie2.updatePixels();
+  textSize(28);
+  text(getFrame() + " / " + (getLength() - 1), 10 , 30);
+  text(String.valueOf(myMovie2.frameRate), myMovie2.width-100, 30);
 }
 
 // Called every time a new frame is available to read
 void movieEvent(Movie m) {
   m.read();
+}
+
+int getLength(){
+  return int(myMovie2.duration() * myMovie2.frameRate);
+}
+
+int getFrame(){
+  return ceil(myMovie2.time() * 30) - 1;
 }
