@@ -1,4 +1,4 @@
-# Taller de análisis de imágenes por software
+﻿# Taller de análisis de imágenes por software
 
 ## Propósito
 
@@ -28,7 +28,14 @@ Complete la tabla:
 
 ## Discusión
 
-(describa brevemente las actividades realizadas y los resultados obtenidos)
+Se realizaron en total 4 actividades:
+
+* Filtro blanco y negro en imagen.
+* Filtro blanco y negro en video con display de fps.
+* Mascaras de convolución en imagen.
+* Segmentación de una imagen segun el histograma.
+
+Los procedimientos que seguimos fueron bastante simples pero efectivos para el estudio de los efectos de filtro y mascaras de convolución. Se hace una conversion pixel a pixel realizando calculos basicos, y se encuentra que los filtros pueden servir para resaltar ciertas partes de la imagen, cuentan una historia.
 
 ## Entrega
 
