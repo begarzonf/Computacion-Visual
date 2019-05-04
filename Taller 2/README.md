@@ -12,9 +12,11 @@ Implementar al menos 6 ilusiones de tres tipos distintos (paradójicas, geométr
 
 Complete la tabla:
 
-| Integrante | github nick |
-|------------|-------------|
-|            |             |
+|      Integrante      |github nick|
+|----------------------|-----------|
+| Alejandro Santamaría | alejosaur |
+| Brayan Esteban Garzón| begarzonf |
+|  Juan Camilo Lozano  |  olimita  |
 
 ## Discusión
 
