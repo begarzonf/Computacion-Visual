@@ -1,18 +1,24 @@
 PGraphics py;
 PGraphics pg;
-int SIZE = 100;
+int SIZE = 150;
+float angleY = -(PI/4);
+float angleXZ = 0;
 
 void setup() {
-  size(1024, 768, P3D);
+  size(1920, 1020, P3D);
 
 }
-void draw() {
-  directionalLight(255, 255, 255, 1, 1, 0);
+
+void draw() {  
+  background(30);
+  ambientLight(255, 255, 255);
+  directionalLight(255, 255, 255, 0.5, 0, -1);
   fill(121,121,252);
   noStroke();
-  translate(width/2-SIZE, height/2-2*SIZE, 0); 
-  rotateY(-0.785398);
-  //rotateX(0.5);
+  translate(width/2-SIZE, height/2, 0); 
+  rotateY(angleY);
+  rotateX(angleXZ);
+  rotateZ(angleXZ);
   box(SIZE);
   translate(0, SIZE, 0); 
   box(SIZE);
@@ -26,5 +32,9 @@ void draw() {
   box(SIZE);
   translate(SIZE, 0, 0); 
   box(SIZE);
+}
 
+void mouseMoved() {
+  angleY = ((mouseX/(width + 0.0))*2.0*PI);
+  angleXZ = ((mouseY/(height + 0.0))*2.0*PI);
 }
