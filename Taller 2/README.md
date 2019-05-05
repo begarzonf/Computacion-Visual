@@ -1,4 +1,4 @@
-# Taller ilusiones visuales
+﻿# Taller ilusiones visuales
 
 ## Propósito
 
@@ -22,10 +22,10 @@ Complete la tabla:
 
 1. Complete la tabla
 
-| Ilusión | Categoria | Referencia | Tipo de interactividad (si aplica) | URL código base (si aplica) |
-|---------|-----------|------------|------------------------------------|-----------------------------|
-|         |           |            |                                    |                             |
-|         |           |            |                                    |                             |
+|     Ilusión    | Categoria | Referencia |  Tipo de interactividad (si aplica) | URL código base (si aplica) |
+|----------------|-----------|------------|-------------------------------------|-----------------------------|
+|Miss Corner cube|           |https://michaelbach.de/ot/sze-missCornerCube/index.html|Movimiento de mouse para rotar figura|                             |
+|Scanimation|           |https://michaelbach.de/ot/mot-scanimation/index.html|Teclas A y D para mover las barras|                             |
 |         |           |            |                                    |                             |
 |         |           |            |                                    |                             |
 |         |           |            |                                    |                             |
