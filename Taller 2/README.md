@@ -24,8 +24,8 @@ Complete la tabla:
 
 |     Ilusión    | Categoria | Referencia |  Tipo de interactividad (si aplica) | URL código base (si aplica) |
 |----------------|-----------|------------|-------------------------------------|-----------------------------|
-|Miss Corner cube|           |https://michaelbach.de/ot/sze-missCornerCube/index.html|Movimiento de mouse para rotar figura|                             |
-|Scanimation|           |https://michaelbach.de/ot/mot-scanimation/index.html|Teclas A y D para mover las barras|                             |
+|Miss Corner cube|Ambigua|https://michaelbach.de/ot/sze-missCornerCube/index.html|Movimiento de mouse para rotar figura|                   |
+|Scanimation|Movimiento|https://michaelbach.de/ot/mot-scanimation/index.html|Teclas A y D para mover las barras|                             |
 |         |           |            |                                    |                             |
 |         |           |            |                                    |                             |
 |         |           |            |                                    |                             |
