@@ -28,7 +28,7 @@ void draw() {
   img2.loadPixels();
   for (int x = 0; x < img.width; x++) {
     for (int y = 0; y < img.height; y++ ) {
-      color c = convolution(x, y, matrix3, matrixsize, img);
+      color c = convolution(x, y, matrix2, matrixsize, img);
       int loc = x + y*img.width;
       img2.pixels[loc] = c;
     }

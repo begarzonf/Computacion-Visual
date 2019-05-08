@@ -6,7 +6,6 @@ float angleXZ = 0;
 
 void setup() {
   size(1920, 1020, P3D);
-
 }
 
 void draw() {  
