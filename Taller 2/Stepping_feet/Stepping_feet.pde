@@ -1,5 +1,6 @@
 float movp = 0;
 float movm = 920;
+boolean esconder = false;
 
 void setup()
 {
@@ -10,7 +11,11 @@ void setup()
 
 void draw()
 {
-  barras();
+  background(255);
+  fill(0);
+  if(!esconder){
+    barras();
+    print("je");}
 
   if (movm==0){
     movp=0;
@@ -38,11 +43,14 @@ void draw()
 
 void barras()
 {
-  background(255);
-  fill(0);
   for(int i=0; i<width; i++)
   {
     rect(i*20, 0, 10, 500);
   }
-  
 }
+
+void keyPressed() {
+  if (key == 'b') {
+    esconder = !esconder;
+  }
+}  
