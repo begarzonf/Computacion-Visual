@@ -21,7 +21,7 @@ void draw()
     movp=0;
     movm=920;
   }
-  print(movp);
+  
   if(movp<=920){
     color amarillo = color(255,255,0);
     fill(amarillo);
