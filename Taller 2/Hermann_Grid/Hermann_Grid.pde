@@ -13,11 +13,11 @@ void draw()
   background(255);
   fill(0);
   if(!esconder){
-    barras();
+    cuadros();
   }
   fill(255);  
 }
-void barras()
+void cuadros()
 {
   for(int i=0; i<width; i++)
   {
