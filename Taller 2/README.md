@@ -1,4 +1,4 @@
-﻿# Taller ilusiones visuales
+# Taller ilusiones visuales
 
 ## Propósito
 
@@ -28,8 +28,8 @@ Complete la tabla:
 |Scanimation|Movimiento|https://michaelbach.de/ot/mot-scanimation/index.html|Teclas A y D para mover las barras|                             |
 |Stepping feet|Movimiento|https://michaelbach.de/ot/mot-feetLin/index.html|Tecla B para retirar las barras|                             |
 |Hermann Grid|Visual|https://michaelbach.de/ot/lum-herGrid/index.html|Tecla B para retirar los cuadros|                             |
-|         |           |            |                                    |                             |
-|         |           |            |                                    |                             |
+| Waves       | Movimiento          |  https://processing.org/examples/sinewave.html          |                                    |                             |
+| Changing Bubbles        | Fisiologico          |  https://www.livescience.com/55359-best-illusions-of-the-year-2016.html          |                                    |                             |
 
 2. Describa brevememente las referencias estudiadas y los posibles temas en los que le gustaría profundizar
 
