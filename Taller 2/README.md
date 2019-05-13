@@ -35,7 +35,7 @@ Complete la tabla:
 
     Una de las principales referencias fue la página web de [Michael Bach](https://michaelbach.de/ot/index.html), donde se pueden obtener explicaciones para lo que sucede en las ilusiones y se encuentran varios tipos de ilusiones diferentes.
 
-    En temas a profundizar no instersa bastante el tema de las ilusiones visuales, el como nuestro ojos son capaces de recrear colores y hasta formas en lugares donde no los hay y de esto podemos deducir que lo que observamos no tiene porque ser cierto ya que nuestro cerebro nos puede estar jugando una mala pasada y ver algo que en realidad no existe. 
+    En temas a profundizar no interesa bastante el tema de las ilusiones visuales, el como nuestro ojos son capaces de recrear colores y hasta formas en lugares donde no los hay y de esto podemos deducir que lo que observamos no tiene porque ser cierto ya que nuestro cerebro nos puede estar jugando una mala pasada y ver algo que en realidad no existe, seria interesante saber porque estas ilusiones actuan de esta manera con nuestra vista y de esta manera estender aun mas el funcionamiento del sentido de la vista que poseemos. 
 
 ## Entrega
 
