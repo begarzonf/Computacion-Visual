@@ -135,11 +135,11 @@ void keyPressed() {
   if (key == 'd')
     debug = !debug;
   if (key == '+') {
-    n = n < 9 ? n+1 : 2;
+    n = n < 9 ? n+1 : 3;
     node.setScaling(width/pow( 2, n));
   }
   if (key == '-') {
-    n = n >2 ? n-1 : 9;
+    n = n >3 ? n-1 : 9;
     node.setScaling(width/pow( 2, n));
   }
   if (key == 'r')
