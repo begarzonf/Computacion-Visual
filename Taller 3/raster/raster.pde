@@ -19,7 +19,7 @@ boolean gridHint = true;
 boolean debug = true;
 
 // 3. Use FX2D, JAVA2D, P2D or P3D
-String renderer = P3D;
+String renderer = JAVA2D;
 
 // 4. Window dimension
 int dim = 10;
@@ -102,8 +102,8 @@ void triangleRaster() {
         float b = 255 * w2/sum; 
         fill(r, g, b);
         
-        //rect(round(node.location(p).x())-1, round(node.location(p).y())-0.5,1,1);
-        circle(round(node.location(p).x())-0.5, round(node.location(p).y())-0.5,1);
+        rect(round(node.location(p).x())-1, round(node.location(p).y())-0.5,1,1);
+        //circle(round(node.location(p).x())-0.5, round(node.location(p).y())-0.5,1);
       }
     }
   }
@@ -118,7 +118,7 @@ float edgeFunction(Vector A, Vector B, Vector P)
 
 void randomizeTriangle() {
   int low = -width/2;
-  int high = width/2;
+  int high = width/2;  
   //v1 = new Vector(-1024, -1024);
   //v2 = new Vector(-1024, 1024);
   //v3 = new Vector(1024, 1024);
