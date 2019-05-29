@@ -7,11 +7,11 @@ int offset = 0;
 
 void setup() {
   //size(460, 251);//bateria
-  //size(498, 468);//mario
-  size(523, 305);//bear
+  size(498, 468);//mario
+  //size(523, 305);//bear
   colorMode(HSB);
   
-  PImage[] allFrames = Gif.getPImages(this, "bear.gif");
+  PImage[] allFrames = Gif.getPImages(this, "mario.gif");
   imgFinal = createImage(allFrames[0].width, allFrames[0].height, RGB);
   
   int numFrames = allFrames.length;
