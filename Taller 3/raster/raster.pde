@@ -90,7 +90,7 @@ void triangleRaster() {
       float w0 = edgeFunction(v2, v3, p);
       float w1 = edgeFunction(v3, v1, p);
       float w2 = edgeFunction(v1, v2, p);
-      if (w0 >= 0 && w1 >= 0 && w2 >= 0) {
+      if ((w0 >= 0 && w1 >= 0 && w2 >= 0) || (w0 < 0 && w1 < 0 && w2 < 0)) {
           pushStyle();
           stroke(255, 255, 0, 0);
           rect(round(node.location(p).x())-1, round(node.location(p).y())-1,1,1);
