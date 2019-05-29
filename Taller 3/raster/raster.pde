@@ -83,7 +83,9 @@ void triangleRaster() {
   Vector p = new Vector(0,0);
   int paso = floor(width/pow( 2, n));
   
-  point(round(node.location(v1).z()), round(node.location(v2).z()));
+  pushStyle();
+
+  stroke(255, 255, 0, 0);
   for(int i=-width/2; i<width/2; i += paso){
     for(int j=-width/2; j<width/2; j += paso){
       p = new Vector(i-(0.5*paso),j-(0.5*paso));
@@ -98,16 +100,14 @@ void triangleRaster() {
         float r = 255 * w0/sum;
         float g = 255 * w1/sum;
         float b = 255 * w2/sum; 
-        
-        pushStyle();
-        stroke(255, 255, 0, 0);
         fill(r, g, b);
-        //rect(round(node.location(p).x())-1, round(node.location(p).y())-1,1,1);
-        circle(round(node.location(p).x())-1, (node.location(p).x())-1,1);
-        popStyle();
+        
+        //rect(round(node.location(p).x())-1, round(node.location(p).y())-0.5,1,1);
+        circle(round(node.location(p).x())-0.5, round(node.location(p).y())-0.5,1);
       }
     }
   }
+  popStyle();
   
 }
 
@@ -119,6 +119,9 @@ float edgeFunction(Vector A, Vector B, Vector P)
 void randomizeTriangle() {
   int low = -width/2;
   int high = width/2;
+  //v1 = new Vector(-1024, -1024);
+  //v2 = new Vector(-1024, 1024);
+  //v3 = new Vector(1024, 1024);
   v1 = new Vector(random(low, high), random(low, high));
   v2 = new Vector(random(low, high), random(low, high));
   v3 = new Vector(random(low, high), random(low, high));
