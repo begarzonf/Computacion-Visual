@@ -17,6 +17,8 @@ int n = 4;
 boolean triangleHint = true;
 boolean gridHint = true;
 boolean debug = true;
+boolean antialias = true;
+boolean colorEdges = true;
 
 // 3. Use FX2D, JAVA2D, P2D or P3D
 String renderer = JAVA2D;
@@ -84,26 +86,134 @@ void triangleRaster() {
   int paso = floor(width/pow( 2, n));
   
   pushStyle();
-
   stroke(255, 255, 0, 0);
-  for(int i=-width/2; i<width/2; i += paso){
-    for(int j=-width/2; j<width/2; j += paso){
-      p = new Vector(i-(0.5*paso),j-(0.5*paso));
-      
-      float w0 = edgeFunction(v2, v3, p);
-      float w1 = edgeFunction(v3, v1, p);
-      float w2 = edgeFunction(v1, v2, p);      
-      
-      if ((w0 >= 0 && w1 >= 0 && w2 >= 0) || (w0 < 0 && w1 < 0 && w2 < 0)) {
-        float sum = w0 + w1 + w2;
+
+  if(antialias){
+    
+
+    Vector p1 = new Vector(0,0);
+    Vector p2 = new Vector(0,0);
+    Vector p3 = new Vector(0,0);
+    Vector p4 = new Vector(0,0);
+    
+    for(int i=-width/2; i<width/2; i += paso){
+      for(int j=-width/2; j<width/2; j += paso){
+        p = new Vector(i-(0.5*paso),j-(0.5*paso));
+        p1 = new Vector(i,j);
+        p2 = new Vector(i-(paso),j-(paso));
+        p3 = new Vector(i,j-(paso));
+        p4 = new Vector(i-(paso),j);
         
-        float r = 255 * w0/sum;
-        float g = 255 * w1/sum;
-        float b = 255 * w2/sum; 
-        fill(r, g, b);
+        float w10 = edgeFunction(v2, v3, p1);
+        float w11 = edgeFunction(v3, v1, p1);
+        float w12 = edgeFunction(v1, v2, p1);
         
-        rect(round(node.location(p).x())-1, round(node.location(p).y())-0.5,1,1);
-        //circle(round(node.location(p).x())-0.5, round(node.location(p).y())-0.5,1);
+        float w20 = edgeFunction(v2, v3, p2);
+        float w21 = edgeFunction(v3, v1, p2);
+        float w22 = edgeFunction(v1, v2, p2);
+        
+        float w30 = edgeFunction(v2, v3, p3);
+        float w31 = edgeFunction(v3, v1, p3);
+        float w32 = edgeFunction(v1, v2, p3);
+        
+        float w40 = edgeFunction(v2, v3, p4);
+        float w41 = edgeFunction(v3, v1, p4);
+        float w42 = edgeFunction(v1, v2, p4);
+        
+        float w0 = edgeFunction(v2, v3, p);
+        float w1 = edgeFunction(v3, v1, p);
+        float w2 = edgeFunction(v1, v2, p);
+        
+        boolean dentro1 = (w10 >= 0 && w11 >= 0 && w12 >= 0 || w10 < 0 && w11 < 0 && w12 < 0);
+        boolean dentro2 = (w20 >= 0 && w21 >= 0 && w22 >= 0 || w20 < 0 && w21 < 0 && w22 < 0);
+        boolean dentro3 = (w30 >= 0 && w31 >= 0 && w32 >= 0 || w30 < 0 && w31 < 0 && w32 < 0);
+        boolean dentro4 = (w40 >= 0 && w41 >= 0 && w42 >= 0 || w40 < 0 && w41 < 0 && w42 < 0);
+        boolean dentroCentro = (w0 >= 0 && w1 >= 0 && w2 >= 0 || w0 < 0 && w1 < 0 && w2 < 0);
+        
+        int suma = 0;
+        float sum = 0, r = 0, g = 0, b = 0;
+        
+        if(dentroCentro){
+          suma += 1;   
+          sum = w0 + w1 + w2;
+          r = 255 * w0/sum;
+          g = 255 * w1/sum;
+          b = 255 * w2/sum; 
+        }
+        if(dentro1){
+          suma += 1;
+          if(sum==0){
+            sum = w0 + w1 + w2;
+            r = 255 * w0/sum;
+            g = 255 * w1/sum;
+            b = 255 * w2/sum; 
+          }
+        }
+        if(dentro2){
+          suma += 1;   
+          if(sum==0){
+            sum = w0 + w1 + w2;
+            r = 255 * w0/sum;
+            g = 255 * w1/sum;
+            b = 255 * w2/sum; 
+          }
+        }
+        if(dentro3){
+          suma += 1;   
+          if(sum==0){
+            sum = w0 + w1 + w2;
+            r = 255 * w0/sum;
+            g = 255 * w1/sum;
+            b = 255 * w2/sum; 
+          }
+        }
+        if(dentro4){
+          suma += 1;   
+          if(sum==0){
+            sum = w0 + w1 + w2;
+            r = 255 * w0/sum;
+            g = 255 * w1/sum;
+            b = 255 * w2/sum; 
+          }
+        }
+        
+        if (suma>0) {
+       
+          if(colorEdges){
+            fill(r, g, b, 51*suma);
+          }else{
+            fill(#98e5d4, 51*suma);
+          }
+            
+          rect(round(node.location(p).x())-1, round(node.location(p).y())-1,1,1);
+          //circle(round(node.location(p).x())-0.5, round(node.location(p).y())-0.5,1);
+        }
+      }
+    }
+  }else{
+    for(int i=-width/2; i<width/2; i += paso){
+      for(int j=-width/2; j<width/2; j += paso){
+        p = new Vector(i-(0.5*paso),j-(0.5*paso));
+        
+        float w0 = edgeFunction(v2, v3, p);
+        float w1 = edgeFunction(v3, v1, p);
+        float w2 = edgeFunction(v1, v2, p);      
+        
+        if ((w0 >= 0 && w1 >= 0 && w2 >= 0) || (w0 < 0 && w1 < 0 && w2 < 0)) {
+          float sum = w0 + w1 + w2;
+          
+          float r = 255 * w0/sum;
+          float g = 255 * w1/sum;
+          float b = 255 * w2/sum; 
+          if(colorEdges){
+            fill(r, g, b);
+          }else{
+            fill(#98e5d4);
+          }
+          
+          rect(round(node.location(p).x())-1, round(node.location(p).y())-1,1,1);
+          //circle(round(node.location(p).x())-0.5, round(node.location(p).y())-0.5,1);
+        }
       }
     }
   }
@@ -165,4 +275,8 @@ void keyPressed() {
       spinningTask.run(20);
   if (key == 'y')
     yDirection = !yDirection;
+  if (key == 'a')
+    antialias = !antialias;
+  if (key == 'c')
+    colorEdges = !colorEdges;
 }
