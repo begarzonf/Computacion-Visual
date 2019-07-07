@@ -1,7 +1,7 @@
 PImage img;
 PImage bMap;
 
-String imageName = "asd";
+String imageName = "imagen";
 
 //counter
 int size = 60;       // Width of the shape
