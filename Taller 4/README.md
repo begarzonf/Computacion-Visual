@@ -40,13 +40,13 @@ Se realizo mapeo de vectores normales y se uso fuentes de iluminacion, con ayuda
 <p align="center">
   <b>Resultado final en processing</b><br>
   <br><br>
-  <img src="https://github.com/begarzonf/Computacion-Visual/blob/master/Taller%204/BumpMapping/imagen2.png">
+  <img src="https://github.com/begarzonf/Computacion-Visual/blob/master/Taller%204/BumpMapping/imagen2.PNG">
 </p>
 
 
 <p align="center">
   <b>Resultado final en processing 2</b><br>
   <br><br>
-  <img src="https://github.com/begarzonf/Computacion-Visual/blob/master/Taller%204/BumpMapping/imagen3.png">
+  <img src="https://github.com/begarzonf/Computacion-Visual/blob/master/Taller%204/BumpMapping/imagen3.PNG">
 </p>
 
