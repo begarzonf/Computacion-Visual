@@ -38,14 +38,14 @@ Para el Bump Mapping se utilizo la siguiente imagen:
 Se realizo mapeo de vectores normales y se uso fuentes de iluminacion, con ayuda del mapa de vectores normales y la generacion de un bumpMap se pudo generar un buen efecto en la superficie con los siguientes resultado:
 
 <p align="center">
-  <b>Resultado final en processing</b><br>
+  <b>Resultado final</b><br>
   <br><br>
   <img src="https://github.com/begarzonf/Computacion-Visual/blob/master/Taller%204/BumpMapping/imagen2.PNG">
 </p>
 
 
 <p align="center">
-  <b>Resultado final en processing 2</b><br>
+  <b></b><br>
   <br><br>
   <img src="https://github.com/begarzonf/Computacion-Visual/blob/master/Taller%204/BumpMapping/imagen3.PNG">
 </p>
