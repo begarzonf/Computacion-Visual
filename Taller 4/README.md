@@ -35,7 +35,7 @@ Para el Bump Mapping se utilizo la siguiente imagen:
 </p>
 
 
-Se realizo mapeo de vectores normales y se uso fuentes de iluminacion, con ayuda del mapa de vectores normales y la generacion de un bumpMap se pudo generar un buen efecto en la superficie con los siguientes resultado:
+Utilizando la tecnica nombrada aqui [2D bump-mapping](http://tfpsly.free.fr/Docs/TomHammersley/bumpmap.htm) y con ayuda de codigo tomado de [2D Bump Mapping](https://www.openprocessing.org/sketch/42758/). Se realizo mapeo de vectores normales y se uso fuentes de iluminacion, con ayuda del mapa de vectores normales y la generacion de un bumpMap se pudo generar un buen efecto en la superficie con los siguientes resultados:
 
 <p align="center">
   <b>Resultado final</b><br>
