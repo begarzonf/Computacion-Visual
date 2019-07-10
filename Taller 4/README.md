@@ -16,12 +16,37 @@ Complete la tabla:
 
 | Integrante | github nick |
 |------------|-------------|
-|            |             |
+|   Brayan Esteban Garzon         |   begarzonf          |
+|   Alejandro Santamaria Perez         |   alejosaur          |
+|   Juan camilo Lozano Mejia         |   olimita         |
+
+
 
 ## Informe
 
-(elabore en este sección un informe del ejercicio realizado)
+Se realizo la implementación de unos archivos GLSL para pasarlos en processing por medio de la funcion shader, se observan resultados notables en el apartado de imagenes, de una calidad similar a la lograda con mascaras de convolucion, aunque la comparación resulta complicada por un bug en la implementacion de mascaras de convolución resulta en imagenes de tonos morados. En el caso de video los resultados son muy sobresalientes con shaders y a la hora de realizar un recuento de los frames la imagen de video se va completamente por lo tanto esta parte esta comentada en el codigo, aunque se espera un mejor rendimiento al hacer la operación por hardware y no por software.
 
-## Entrega
 
-Fecha límite Lunes 1/7/19 a las 24h.
+Para el Bump Mapping se utilizo la siguiente imagen:
+<p align="center">
+  <b>Imagen original</b><br>
+  <br><br>
+  <img src="https://github.com/begarzonf/Computacion-Visual/blob/master/Taller%204/BumpMapping/imagen.png">
+</p>
+
+
+Se realizo mapeo de vectores normales y se uso fuentes de iluminacion, con ayuda del mapa de vectores normales y la generacion de un bumpMap se pudo generar un buen efecto en la superficie con los siguientes resultado:
+
+<p align="center">
+  <b>Resultado final</b><br>
+  <br><br>
+  <img src="https://github.com/begarzonf/Computacion-Visual/blob/master/Taller%204/BumpMapping/imagen2.PNG">
+</p>
+
+
+<p align="center">
+  <b></b><br>
+  <br><br>
+  <img src="https://github.com/begarzonf/Computacion-Visual/blob/master/Taller%204/BumpMapping/imagen3.PNG">
+</p>
+
