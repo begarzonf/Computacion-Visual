@@ -35,6 +35,8 @@ float radius = 0;
 int w = 1000, h = 700;
 /*Create different skeletons to interact with*/
 String renderer = P3D;
+Node reference;
+List<Node> skeleton;
 
 void settings() {
     size(w, h, renderer);
@@ -50,7 +52,9 @@ void setup(){
       If you have a mesh with quad faces use:
       model = createShapeQuad(loadShape(shapePath), texturePath, 100);
     */
+    reference = new Node(scene);
     model = loadShape(shapePath);
+    skeleton = loadSkeleton(reference);
     //3. Scale scene
     float size = max(model.getHeight(), model.getWidth());
     scene.setRightHanded();
