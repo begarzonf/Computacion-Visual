@@ -7,6 +7,7 @@ import java.util.List;
 
 //Set this path to load your objs
 String shapePath = "spider.obj";
+String texturePath = "textures/Spinnen_Bein_tex_2.jpg";
 
 Scene scene;
 Node reference; 
@@ -24,7 +25,7 @@ void setup(){
     reference.enableTracking(false); //disable interaction
     List<Node> skeleton = loadSkeleton(reference);
     //Relate the shape with a skinning method (CPU or GPU)
-    skinning = new GPULinearBlendSkinning(skeleton, this.g, loadShape(shapePath));
+    skinning = new GPULinearBlendSkinning(skeleton, this.g, shapePath, texturePath, scene.radius(), false);
 }
 
 void draw() {

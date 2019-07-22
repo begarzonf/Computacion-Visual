@@ -29,7 +29,7 @@ String lastCommand = "None";
 PShape model;
 
 //Set this path to load your objs
-String shapePath = "spider.obj";
+String shapePath = "giraffe.obj";
 
 float radius = 0;
 int w = 1000, h = 700;
