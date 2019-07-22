@@ -29,8 +29,8 @@ String lastCommand = "None";
 PShape model;
 
 //Set this path to load your objs
-String shapePath = "giraffe.obj";
-String texturePath = "giraff.jpg";
+String shapePath = "10027_Hummingbird_v1_iterations-2.obj";
+String texturePath = "10027_Hummingbird_v1_Diffuse.jpg";
 
 float radius = 0;
 int w = 1000, h = 700;
